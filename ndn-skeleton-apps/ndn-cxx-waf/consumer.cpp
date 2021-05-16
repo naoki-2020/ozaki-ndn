@@ -95,6 +95,7 @@ int main(int argc, char* argv[])
   std::string a1 = argv[1];
   std::string a2 = argv[2];
   Name functionName(a1);
+  //this sentence?
   Consumer contentConsumer(contentConsumerName, RDR);
   contentConsumer.setContextOption(MUST_BE_FRESH_S, true);
   contentConsumer.setContextOption(INTEREST_LIFETIME, 1000000);
