@@ -39,6 +39,12 @@ def build (bld):
         source='consumer.cpp',
         use='NDN_CXX PYTHON CONSUMERPRODUCERAPI')
 
+    bld(target='ExConsumer',
+        features=['cxx', 'cxxprogram'],
+        source='ExConsumer.cpp',
+        use='NDN_CXX PYTHON CONSUMERPRODUCERAPI')
+
+
     bld(target='producer',
         features=['cxx', 'cxxprogram'],
         source='producer.cpp',
